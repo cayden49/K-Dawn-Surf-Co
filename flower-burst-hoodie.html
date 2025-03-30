@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
@@ -95,13 +95,14 @@
       cursor: default;
     }
 
-    .product-info button {
+    .add-to-cart {
       padding: 0.75rem 1.5rem;
-      background-color: #ccc;
+      background-color: #7b4b36;
+      color: white;
       border: none;
       font-weight: bold;
-      cursor: not-allowed;
       border-radius: 5px;
+      cursor: pointer;
       margin-bottom: 2rem;
     }
 
@@ -176,7 +177,7 @@
         <span>Large</span>
       </div>
 
-      <button>Only 1 available</button>
+      <button class="add-to-cart" onclick="alert('Added to cart!')">Add to Cart</button>
 
       <div class="description">
         <h3>Description</h3>
