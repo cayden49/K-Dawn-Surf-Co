@@ -11,32 +11,54 @@
       background-color: #fffdf7;
       color: #333;
     }
-    header {
-      background-color: #f4e3cf;
-      padding: 1.5rem;
-      text-align: center;
-      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-    }
-    header h1 {
-      margin: 0;
-      font-size: 2.5rem;
-      letter-spacing: 2px;
-    }
-    nav {
-      background-color: #fff4dc;
+
+    /* Header Bar */
+    .top-bar {
       display: flex;
-      justify-content: center;
-      gap: 2rem;
-      padding: 1rem 0;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1rem 2rem;
+      border-bottom: 1px solid #eee;
+    }
+
+    .logo {
+      font-size: 2rem;
+      font-family: 'Georgia', serif;
+      font-weight: bold;
+      letter-spacing: 1px;
+    }
+
+    .logo span {
+      font-family: 'Cursive', sans-serif;
+      font-size: 2.2rem;
+      letter-spacing: 3px;
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 1.5rem;
+    }
+
+    .nav-links a {
+      text-decoration: none;
+      color: #333;
       font-weight: bold;
     }
-    nav a {
+
+    .nav-links a:hover {
       color: #7b4b36;
-      text-decoration: none;
     }
-    nav a:hover {
-      text-decoration: underline;
+
+    .icons {
+      display: flex;
+      gap: 1.2rem;
+      font-size: 1.2rem;
     }
+
+    .icons span {
+      cursor: pointer;
+    }
+
     .hero {
       background: url('https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1600&q=80') center/cover no-repeat;
       height: 60vh;
@@ -49,27 +71,7 @@
       text-align: center;
       padding: 1rem;
     }
-    .section {
-      padding: 2rem;
-      text-align: center;
-    }
-    .products {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 2rem;
-      justify-content: center;
-    }
-    .product {
-      width: 200px;
-      border: 1px solid #e0dcd1;
-      border-radius: 10px;
-      padding: 1rem;
-      background-color: #fff;
-    }
-    .product img {
-      width: 100%;
-      border-radius: 10px;
-    }
+
     footer {
       background-color: #e5d3bd;
       text-align: center;
@@ -81,37 +83,22 @@
 </head>
 <body>
 
-  <header>
-    <h1>K Dawn Surf</h1>
-  </header>
-
-  <nav>
-    <a href="index.html">Home</a>
-    <a href="shop.html">Shop</a>
-    <a href="about.html">About</a>
-    <a href="contact.html">Contact</a>
-  </nav>
-
-  <div class="hero">
-    Live the beach life 🌞
+  <!-- Top Header Bar -->
+  <div class="top-bar">
+    <div class="logo"><span>K</span> Dawn Surf</div>
+    <div class="nav-links">
+      <a href="tops.html">Tops</a>
+      <a href="jewelry.html">Jewelry</a>
+    </div>
+    <div class="icons">
+      <span>🔍</span>
+      <span>🛒</span>
+      <span>👤</span>
+    </div>
   </div>
 
-  <div class="section">
-    <h2>New Arrivals</h2>
-    <div class="products">
-      <div class="product">
-        <img src="https://via.placeholder.com/200x250.png?text=Crop+Top" alt="Crop Top" />
-        <p>Boho Crop Top</p>
-      </div>
-      <div class="product">
-        <img src="https://via.placeholder.com/200x250.png?text=Beach+Hoodie" alt="Beach Hoodie" />
-        <p>Beach Hoodie</p>
-      </div>
-      <div class="product">
-        <img src="https://via.placeholder.com/200x250.png?text=Flowy+Skirt" alt="Flowy Skirt" />
-        <p>Flowy Skirt</p>
-      </div>
-    </div>
+  <div class="hero">
+    Beachwear for free spirits 🌞
   </div>
 
   <footer>
