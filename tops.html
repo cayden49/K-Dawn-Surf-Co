@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Tops – K Dawn Surf</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Arial', sans-serif;
+      background-color: #fffdf7;
+      color: #333;
+    }
+
+    .top-bar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1rem 2rem;
+      border-bottom: 1px solid #eee;
+    }
+
+    .logo {
+      font-size: 2rem;
+      font-family: 'Georgia', serif;
+      font-weight: bold;
+      letter-spacing: 1px;
+      text-decoration: none;
+      color: #333;
+    }
+
+    .logo span {
+      font-family: 'Cursive', sans-serif;
+      font-size: 2.2rem;
+      letter-spacing: 3px;
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 1.5rem;
+    }
+
+    .nav-links a {
+      text-decoration: none;
+      color: #333;
+      font-weight: bold;
+    }
+
+    .nav-links a:hover {
+      color: #7b4b36;
+    }
+
+    .icons {
+      display: flex;
+      gap: 1.2rem;
+      align-items: center;
+    }
+
+    .icons svg {
+      width: 24px;
+      height: 24px;
+      stroke: #333;
+      cursor: pointer;
+      transition: stroke 0.2s;
+    }
+
+    .icons svg:hover {
+      stroke: #7b4b36;
+    }
+
+    .section {
+      padding: 2rem;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    .section h1 {
+      font-size: 2rem;
+      text-align: center;
+      margin-bottom: 2rem;
+    }
+
+    .products {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 2rem;
+      justify-content: center;
+    }
+
+    .product {
+      width: 220px;
+      background-color: #fff;
+      border: 1px solid #e6e1d9;
+      border-radius: 12px;
+      padding: 1rem;
+      text-align: center;
+      box-shadow: 2px 2px 8px rgba(0,0,0,0.05);
+    }
+
+    .product img {
+      width: 100%;
+      border-radius: 10px;
+      margin-bottom: 0.5rem;
+    }
+
+    .product p {
+      margin: 0.5rem 0 0;
+      font-weight: bold;
+    }
+
+    footer {
+      background-color: #e5d3bd;
+      text-align: center;
+      padding: 1rem;
+      margin-top: 3rem;
+      font-size: 0.9rem;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <div class="top-bar">
+    <a href="index.html" class="logo"><span>K</span> Dawn Surf</a>
+    <div class="nav-links">
+      <a href="tops.html">Tops</a>
+      <a href="jewelry.html">Jewelry</a>
+    </div>
+    <div class="icons">
+      <!-- Search Icon -->
+      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+        <path stroke-linecap="round" stroke-linejoin="round" d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z" />
+      </svg>
+
+      <!-- Cart Icon -->
+      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+        <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 0 0-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 0 0-16.536-1.84M7.5 14.25 5.106 5.272M6 20.25a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Zm12.75 0a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Z" />
+      </svg>
+
+      <!-- User Icon -->
+      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+        <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 6a3.75 3.75 0 1 1-7.5 0 3.75 3.75 0 0 1 7.5 0ZM4.501 20.118a7.5 7.5 0 0 1 14.998 0A17.933 17.933 0 0 1 12 21.75c-2.676 0-5.216-.584-7.499-1.632Z" />
+      </svg>
+    </div>
+  </div>
+
+  <!-- Tops Section -->
+  <div class="section">
+    <h1>Tops</h1>
+    <div class="products">
+      <div class="product">
+        <img src="https://via.placeholder.com/220x280.png?text=Boho+Crop+Top" alt="Boho Crop Top">
+        <p>Boho Crop Top</p>
+      </div>
+      <div class="product">
+        <img src="https://via.placeholder.com/220x280.png?text=Beach+Halter" alt="Beach Halter">
+        <p>Beach Halter</p>
+      </div>
+      <div class="product">
+        <img src="https://via.placeholder.com/220x280.png?text=Surfer+Tank" alt="Surfer Tank">
+        <p>Surfer Tank</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    © 2025 K Dawn Surf. All rights reserved.
+  </footer>
+
+</body>
+</html>
